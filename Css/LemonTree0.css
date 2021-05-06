@@ -1,0 +1,122 @@
+/*
+color picker:
+#222222
+#333333
+#223333
+#222333
+#385555
+#314333*/
+
+
+
+* {
+	box-sizing: border-box;
+}
+html {
+	background-color: #203333;
+	padding: 5px;
+}
+
+body {
+	background-color: #00452a;
+	border-radius: 5px;
+	box-shadow: 5px 3px 10px black;
+	padding: 8px;
+}
+
+nav {
+	background-color: #223333;
+	box-shadow: -1px 5px 10px black;
+	text-align: center;
+	display: block;
+	font-size: 50px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 50px;
+	z-index: 5;
+}
+
+
+.body {
+	background-color: #222222;
+	border-radius: 7px;
+	box-shadow: 0 2px 10px black;
+	color: #d4d4d4;
+	font-size: 14px;
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+	z-index: 5;
+}
+.ic {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1; 
+}
+.logo {
+	content: url("https://cdn.glitch.com/62acf20d-579c-4424-bbc0-e1d4519d5e37%2F88xPGV01.svg?v=1620220753716");
+}
+.btn-src-bar {
+	border: 0;
+	background: transparent;
+}
+.input-src {
+	Border-bottom: 1px solid #747474;
+	color: #747474;
+}
+#bars {
+	float: left;
+	margin-left: 15px;
+	margin-top: 19px;
+}
+#Daun {
+	float: none;
+	margin-top: 8px;
+}
+#search {
+	display: block;
+	float: right;
+	margin-right: 18px;
+	margin-top: 19px;
+}
+#nav0 {
+	display: none;
+}
+#content {
+	color: white;
+	margin-top: 50px;
+	overflow: scroll;
+	position: static;
+	text-align: center;
+}
+#footer {
+	background-color: #203333;
+	bottom: 0;
+	display: none;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+#search-form {
+	background-color: #222222;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: -1px 5px 10px black;
+	display: none;
+	padding: 8px;
+	padding-top: 15px;
+	position: fixed;
+	right: 3px;
+	top: 65px;
+	z-index: 4;
+}
