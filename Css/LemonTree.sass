@@ -1,22 +1,33 @@
 $svg-arrow-right: "https://lemoncakep.github.io/Svg/arrow-right.svg"
 $svg-bars: "https://lemoncakep.github.io/Svg/bars.svg"
 $svg-Daun: "https://lemoncakep.github.io/Svg/Daun.svg"
+$svg-lemon: "https://lemoncakep.github.io/Svg/lemon.svg"
 $svg-search: "https://lemoncakep.github.io/Svg/search.svg"
 $svg-times: "https://lemoncakep.github.io/Svg/times.svg"
-$svg-list: (arrow-right:$svg-arrow-right, bars:$svg-bars, Daun:$svg-Daun, search:$svg-search, times:$svg-times)
+$svg-list: (arrow-right:$svg-arrow-right, bars:$svg-bars, Daun:$svg-Daun, lemon:$svg-lemon, search:$svg-search, times:$svg-times)
 
 $color-custom-darkblack: #222222
 $color-custom-lightblack: #747474
 $color-custom-lightgray: #d4d4d4
 $color-custom-darkgreen: #203333
-$color-custom-darkgreen-0: #223333
+$color-custom-darkgreen-0: #1c3030
 $color-custom-lightgreen: #00452a
-$color-list: ("aqua": aqua,"black": black,"blue": blue,"brown": brown,"darkblue": darkblue,"darkgray": darkgray,"darkgreen": darkgreen,"gray": gray,"green": green,"lime": lime,"lightblue": lightblue,"lightgray": lightgray,"lightgreen": lightgreen,"magenta": magenta,"pink": pink,"purple": purple,"violet": violet,"white": white,"yellow": yellow,custom-darkblack: $color-custom-darkblack,custom-darkgreen: $color-custom-darkgreen,custom-darkgreen-0: $color-custom-darkgreen-0,custom-lightblack: $color-custom-lightblack,custom-lightgray: $color-custom-lightgray,custom-lightgreen: $color-custom-lightgreen)
+$color-custom-lightgreen-0: #2ab86c
+$color-list: ("aqua": aqua,"black": black,"blue": blue,"brown": brown,"darkblue": darkblue,"darkgray": darkgray,"darkgreen": darkgreen,"gray": gray,"green": green,"lime": lime,"lightblue": lightblue,"lightgray": lightgray,"lightgreen": lightgreen,"magenta": magenta,"pink": pink,"purple": purple,"violet": violet,"white": white,"yellow": yellow,custom-darkblack: $color-custom-darkblack,custom-darkgreen: $color-custom-darkgreen,custom-darkgreen-0: $color-custom-darkgreen-0,custom-lightblack: $color-custom-lightblack,custom-lightgray: $color-custom-lightgray,custom-lightgreen: $color-custom-lightgreen,custom-lightgreen-0: $color-custom-lightgreen-0)
 
-$shadow-thin-black: 2px 2px 10px black
-$shadow-thin-darkgray: 2px 2px 10px darkgray
-$shadow-thick-black: 5px 5px 10px black
-$shadow-thick-darkgray: 5px 5px 10px darkgray
+$shadow-thin-thick-black: 2px 2px 10px black
+$shadow-thin-thin-black: 2px 2px 5px black
+$shadow-thin-thick-darkgray: 2px 2px 10px darkgray
+$shadow-thin-thin-darkgray: 2px 2px 5px darkgray
+$shadow-thin-thick-white: 2px 2px 10px white
+$shadow-thin-thin-white: 2px 2px 5px white
+
+$shadow-thick-thick-black: 5px 5px 10px black
+$shadow-thick-thin-black: 5px 5px 5px black
+$shadow-thick-thick-darkgray: 5px 5px 10px darkgray
+$shadow-thick-thin-darkgray: 5px 5px 5px darkgray
+$shadow-thick-thick-white: 5px 5px 10px white
+$shadow-thick-thin-white: 5px 5px 5px white
 
 $font-list: (bold, italic, underline)
 
@@ -28,8 +39,12 @@ html
 
 body
 	background-color: $color-custom-lightgreen
-	box-shadow: $shadow-thick-black
-	color: white
+	border-left: 0.5px solid black
+	border-top: 0.5px solid black
+	border-radius: 5px
+	box-shadow: $shadow-thick-thick-black
+	color: $color-custom-lightgray
+	font-family: Serif
 	font-size: 14px
 	padding: 5px
 	z-index: 0
@@ -40,50 +55,67 @@ body
 	b
 		font-weight: 700
 	h1
-		margin-left: 3px
+		margin-left: 4px
 	h2
-		margin-left: 3px
+		margin-left: 4px
 	h3
-		margin-left: 3px
+		margin-left: 4px
 	h4
-		margin-left: 3px
+		margin-left: 4px
 	h5
-		margin-left: 3px
+		margin-left: 4px
 	h6
-		margin-left: 3px
+		margin-left: 4px
 	p
-		margin-left: 3px
+		margin-left: 4px
 
 blockquote
-	background-color: lightgray
-	border-left: gray
-	border-radius: 5px
+	background-color: $color-custom-darkgreen
+	border-left: 2px solid lightgray
+	border-bottom: 0.5px solid lightgray
+	border-radius: 3px
+	color: $color-custom-lightgreen-0
+	font-family: Arial
+	margin-left: 5px
+	overflow: scroll
+	padding: 4px
+	text-shadow: $shadow-thin-thick-black
+	q
+		padding: 3px
 
 code
-	background-color: lightgray
+	background-color: $color-custom-lightgreen
+	border: 0.5px solid lightgray
+	border-radius: 1.5px
+	font-family: Courier New
+	margin-left: 3px
 	overflow: scroll
+	padding: 4px
+	text-shadow: 1px 1px 5px black
+
 
 
 #content-header
 	background-color: $color-custom-lightgreen
 	color: white
-	font-family: Daun
 	margin-top: 60px
-	text-align: center
 	z-index: 1
 	h1
-		color: yellow
+		color: $color-custom-lightgreen-0
+		font-family: Daun
 		font-size: 50px
 		margin-top: 10px
+		text-align: center
+		text-shadow: $shadow-thin-thin-black
 
 #content
 	background-color: $color-custom-lightgreen
-	color: lightgray
+	color: $color-custom-lightgray
 	font-size: 14px
 
 #navbar-top
 	background-color: $color-custom-darkgreen
-	box-shadow: $shadow-thin-black
+	box-shadow: $shadow-thin-thick-black
 	display: block
 	left: 0
 	overflow: hidden
@@ -94,7 +126,7 @@ code
 
 #navbar-bottom
 	background-color: $color-custom-darkgreen
-	box-shadow: $shadow-thin-black
+	box-shadow: $shadow-thin-thick-black
 	bottom: 0
 	display: block
 	left: 0
@@ -124,7 +156,7 @@ code
 	.ln-#{$name}
 		border: 1px solid $color
 		border-radius: 100%
-		box-shadow: $shadow-thin-black
+		box-shadow: $shadow-thin-thick-black
 
 @each $name, $url in $svg-list
 	.svg-#{$name}:before

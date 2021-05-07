@@ -1,4 +1,5 @@
 #navbar-icon-bars {
+	filter: drop-shadow(2px 2px 2px black);
 	float: left;
 	height: 25px;
 	margin-top: 20px;
@@ -6,6 +7,7 @@
 	width: 25px;
 }
 #navbar-icon-logo {
+	filter: drop-shadow(2px 2px 2px black);
 	float: none;
 	height: 50px;
 	margin-top: 10px;
@@ -13,6 +15,7 @@
 	width: 50px;
 }
 #navbar-icon-search {
+	filter: drop-shadow(2px 2px 2px black);
 	float: right;
 	height: 25px;
 	margin-top: 20px;

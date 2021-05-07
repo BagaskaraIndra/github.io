@@ -1,12 +1,16 @@
 html {
-  background-color: #223333;
+  background-color: #1c3030;
   padding: 5px;
 }
 
 body {
   background-color: #00452a;
+  border-left: 0.5px solid black;
+  border-top: 0.5px solid black;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px black;
-  color: white;
+  color: #d4d4d4;
+  font-family: Serif;
   font-size: 14px;
   padding: 5px;
   z-index: 0;
@@ -21,55 +25,72 @@ body b {
   font-weight: 700;
 }
 body h1 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body h2 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body h3 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body h4 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body h5 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body h6 {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 body p {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 
 blockquote {
-  background-color: lightgray;
-  border-left: gray;
-  border-radius: 5px;
+  background-color: #203333;
+  border-left: 2px solid lightgray;
+  border-bottom: 0.5px solid lightgray;
+  border-radius: 3px;
+  color: #2ab86c;
+  font-family: Arial;
+  margin-left: 5px;
+  overflow: scroll;
+  padding: 4px;
+  text-shadow: 2px 2px 10px black;
+}
+blockquote q {
+  padding: 3px;
 }
 
 code {
-  background-color: lightgray;
+  background-color: #00452a;
+  border: 0.5px solid lightgray;
+  border-radius: 1.5px;
+  font-family: Courier New;
+  margin-left: 3px;
   overflow: scroll;
+  padding: 4px;
+  text-shadow: 1px 1px 5px black;
 }
 
 #content-header {
   background-color: #00452a;
   color: white;
-  font-family: Daun;
   margin-top: 60px;
-  text-align: center;
   z-index: 1;
 }
 #content-header h1 {
-  color: #18dd00;
+  color: #2ab86c;
+  font-family: Daun;
   font-size: 50px;
   margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
 }
 
 #content {
   background-color: #00452a;
-  color: lightgray;
+  color: #d4d4d4;
   font-size: 14px;
 }
 
@@ -98,7 +119,7 @@ code {
 }
 
 #footer {
-  background-color: #223333;
+  background-color: #1c3030;
   font-size: 12px;
 }
 
@@ -407,15 +428,15 @@ code {
 }
 
 .bg-custom-darkgreen-0 {
-  background-color: #223333;
+  background-color: #1c3030;
 }
 
 .fn-custom-darkgreen-0 {
-  color: #223333;
+  color: #1c3030;
 }
 
 .ln-custom-darkgreen-0 {
-  border: 1px solid #223333;
+  border: 1px solid #1c3030;
   border-radius: 100%;
   box-shadow: 2px 2px 10px black;
 }
@@ -462,6 +483,20 @@ code {
   box-shadow: 2px 2px 10px black;
 }
 
+.bg-custom-lightgreen-0 {
+  background-color: #2ab86c;
+}
+
+.fn-custom-lightgreen-0 {
+  color: #2ab86c;
+}
+
+.ln-custom-lightgreen-0 {
+  border: 1px solid #2ab86c;
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px black;
+}
+
 .svg-arrow-right:before {
   content: url("https://lemoncakep.github.io/Svg/arrow-right.svg");
 }
@@ -472,6 +507,10 @@ code {
 
 .svg-Daun:before {
   content: url("https://lemoncakep.github.io/Svg/Daun.svg");
+}
+
+.svg-lemon:before {
+  content: url("https://lemoncakep.github.io/Svg/lemon.svg");
 }
 
 .svg-search:before {
